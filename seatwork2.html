@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT | NACINO & VILLEGAS</title>
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Grade 10 Classmate System</h2>
+
+        <div class="input-group">
+            <input type="text" id="inp_name" placeholder="Full Name">
+            <input type="text" id="inp_sec" placeholder="Class Section">
+            <input type="text" id="inp_fav" placeholder="Subject Interest">
+        </div>
+
+        <div class="controls">
+            <button class="btn-primary" py-click="register_student">ADD STUDENT</button>
+            <button class="btn-secondary" py-click="render_all">SHOW STUDENTS</button>
+        </div>
+
+        <div id="results-box">Waiting for input...</div>
+    </div>
+
+    <!-- Python file link -->
+    <py-script src="seatwork2.py"></py-script>
+
+</body>
+</html>
