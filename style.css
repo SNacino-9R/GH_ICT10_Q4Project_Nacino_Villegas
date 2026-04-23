@@ -11,7 +11,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #FFE7EE;
 }
-
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container {
     max-width: 650px;
@@ -169,3 +173,16 @@ img {
 button, input, div {
     outline: none;
 }
+footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #3E5A70;
+    color: white;
+    border-top: 4px solid #E3F3FF;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
