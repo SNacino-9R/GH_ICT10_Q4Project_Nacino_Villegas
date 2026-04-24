@@ -24,7 +24,7 @@ captions = np.array([
 for i in range(len(photo_files)):
     photo_html = f"""
     <div class="photo-card">
-        <img src="images/{photo_files[i]}" alt="{titles[i]}">
+        <img src="{photo_files[i]}" alt="{titles[i]}">
         <div class="caption-box">
             <div class="caption-title">{titles[i]}</div>
             <div class="caption-text">{captions[i]}</div>
