@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Amethyst Journey | Photos</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <py-config>
+        packages = ["numpy"]
+    </py-config>
+    <style>
+        body { background-color: #f0f2f5; font-family: Arial; margin: 0; padding: 0; }
+        .navbar { background-color: #2b7fff; padding: 15px; color: white; display: flex; justify-content: space-between; }
+        .nav-links a { color: white; margin-left: 15px; text-decoration: none; font-size: 14px; }
+        .gallery-container { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+            padding: 40px; 
+        }
+        .photo-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .photo-card img { width: 100%; height: 150px; object-fit: cover; }
+        .caption-box { padding: 15px; font-size: 13px; }
+        .caption-title { font-weight: bold; color: #333; }
+        .caption-text { color: #666; margin-top: 5px; }
+    </style>
+</head>
+<body>
 
+    <div class="navbar">
+        <div class="logo">10-Ruby</div>
+        <div class="nav-links">
+            <a href="attendance.html">Classmates</a>
+            <a href="seatwork2.html">Attendance Tracker</a>
+            <a href="photos.html">Gallery</a>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 30px;">Highlights of Our 10-Ruby Journey</h1>
+
+    <div id="gallery" class="gallery-container">
+        </div>
+
+    <script type="py" src="photos.py"></script>
+</body>
+</html>
