@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tracker</title>
+    <title>10-Ruby | Attendance Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    
     <py-config>
         packages = ["numpy", "matplotlib"]
     </py-config>
 </head>
-<body>
+
+<body>  
+
+    <header>
+        <div class="logo">10-Ruby</div>
+        <nav>
+            <a href="index.html">Gallery</a>
+            <a href="seatwork2.html">Classmates</a>
+            <a href="attendance.html">Attendance Tracker</a>
+        </nav>
+    </header>
+
+    <section class="title">
+        <h1>Attendance Tracker</h1>
+    </section>
 
     <div class="container">
-        <h2>Attendance Tracker</h2>
+        <h2>Weekly Absence Tracking</h2>
         
         <label>Select Day:</label>
         <select id="day-select">
@@ -27,11 +45,18 @@
         <label>Number of Absences:</label>
         <input type="number" id="absence-input">
 
-        <button id="submit-btn" py-click="update_graph">Submit</button>
+        <div class="controls">
+            <button class="btn-primary" id="submit-btn" py-click="update_graph">SUBMIT DATA</button>
+        </div>
 
-        <div id="plot-target"></div>
+        <div id="plot-target" style="margin-top: 20px; background-color: white; border-radius: 8px;"></div>
     </div>
 
+    <footer>
+        <p>© 2025-2026 10-Ruby. All rights reserved.</p>
+    </footer>
+
     <script type="py" src="./attendance.py?v=1"></script>
+
 </body>
 </html>
